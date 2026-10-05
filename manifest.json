@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Animate with SayMaker: Image to Video",
+  "version": "1.0.0",
+  "description": "Right-click any image on the web to turn it into a video clip on SayMaker with Kling 3.0, Veo 3.1, Seedance 2.0 or MiniMax H3.",
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "permissions": ["contextMenus"],
+  "background": { "scripts": ["background.js"] },
+  "action": { "default_popup": "popup.html", "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" } },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "animate-with-saymaker@saymaker.ai",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": { "required": ["none"] }
+    }
+  },
+  "homepage_url": "https://saymaker.ai/?utm_source=firefox&utm_medium=extension"
+}
